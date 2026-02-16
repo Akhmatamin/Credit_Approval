@@ -35,35 +35,35 @@ class MushroomSchema(BaseModel):
     population: str
     habitat: str
 
-CAP_SHAPE = ["c", "f", "k", "s", "x"]
-CAP_SURFACE = ["g", "s", "y"]
-CAP_COLOR = ["c", "e", "g", "n", "p", "r", "u", "w", "y"]
-BRUISES = ["t"]
-ODOR = ["c", "f", "l", "m", "n", "p", "s", "y"]
+CAP_SHAPE = ("c", "f", "k", "s", "x")
+CAP_SURFACE = ("g", "s", "y")
+CAP_COLOR = ("c", "e", "g", "n", "p", "r", "u", "w", "y")
+BRUISES = ("t",)
+ODOR = ("c", "f", "l", "m", "n", "p", "s", "y")
 
-GILL_ATTACHMENT = ["f"]
-GILL_SPACING = ["w"]
-GILL_SIZE = ["n"]
-GILL_COLOR = ["e", "g", "h", "k", "n", "o", "p", "r", "u", "w", "y"]
+GILL_ATTACHMENT = ("f",)
+GILL_SPACING = ("w",)
+GILL_SIZE = ("n",)
+GILL_COLOR = ("e", "g", "h", "k", "n", "o", "p", "r", "u", "w", "y")
 
-STALK_SHAPE = ["t"]
-STALK_ROOT = ["c", "e", "r"]
+STALK_SHAPE = ("t",)
+STALK_ROOT = ("c", "e", "r")
 
-STALK_SURFACE_ABOVE_RING = ["k", "s", "y"]
-STALK_SURFACE_BELOW_RING = ["k", "s", "y"]
+STALK_SURFACE_ABOVE_RING = ("k", "s", "y")
+STALK_SURFACE_BELOW_RING = ("k", "s", "y")
 
-STALK_COLOR_ABOVE_RING = ["c", "e", "g", "n", "o", "p", "w", "y"]
-STALK_COLOR_BELOW_RING = ["c", "e", "g", "n", "o", "p", "w", "y"]
+STALK_COLOR_ABOVE_RING = ("c", "e", "g", "n", "o", "p", "w", "y")
+STALK_COLOR_BELOW_RING = ("c", "e", "g", "n", "o", "p", "w", "y")
 
-VEIL_COLOR = ["o", "w", "y"]
+VEIL_COLOR = ("o", "w", "y")
 
-RING_NUMBER = ["o", "t"]
-RING_TYPE = ["f", "l", "n", "p"]
+RING_NUMBER = ("o", "t")
+RING_TYPE = ("f", "l", "n", "p")
 
-SPORE_PRINT_COLOR = ["h", "k", "n", "o", "r", "u", "w", "y"]
+SPORE_PRINT_COLOR = ("h", "k", "n", "o", "r", "u", "w", "y")
 
-POPULATION = ["c", "n", "s", "v", "y"]
-HABITAT = ["g", "l", "m", "p", "u", "w"]
+POPULATION = ("c", "n", "s", "v", "y")
+HABITAT = ("g", "l", "m", "p", "u", "w")
 
 
 @mushroom_router.post('/')
